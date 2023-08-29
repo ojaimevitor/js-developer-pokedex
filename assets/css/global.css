@@ -1,24 +1,30 @@
+/* Define o estilo para todos os elementos da página */
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Define a fonte 'Roboto' como a fonte padrão para todos os elementos */
+    box-sizing: border-box; /* Define a caixa de modelagem de borda para garantir que as dimensões incluam as bordas */
 }
 
+/* Estilos para o corpo (body) da página */
 body {
-    background-color: #f6f8fc;
+    background-color: #f6f8fc; /* Define a cor de fundo do corpo da página como um tom de cinza claro */
 }
-
+body.noscroll{
+    overflow: hidden;
+}
+/* Estilos para a classe 'content' */
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+    width: 100vw; /* Define a largura como 100% da largura da janela de visualização */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    padding: 1rem; /* Adiciona um espaçamento interno de 1 rem (unidade de medida relativa) em todos os lados */
+    background-color: #fff; /* Define a cor de fundo como branco */
 }
 
+/* Estilos aplicados apenas em telas com largura mínima de 992px */
 @media screen and (min-width: 992px) {
     .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
+        max-width: 992px; /* Define a largura máxima do conteúdo como 992px */
+        height: auto; /* A altura se ajustará automaticamente ao conteúdo */
+        margin: 1rem auto; /* Centraliza o conteúdo horizontalmente com uma margem de 1rem na parte superior e inferior */
+        border-radius: 1rem; /* Adiciona uma borda arredondada com raio de 1rem */
     }
 }
